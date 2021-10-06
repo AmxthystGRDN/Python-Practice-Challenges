@@ -13,8 +13,8 @@ else:
         fnum = randrange(1, 100) # Define first number in a random range from 1 to 100
         mnum = randrange(1, 100) # Define middle number in a random range from 1 to 100
         lnum = randrange(1, 100) # Define last number in a random range from 1 to 100
-        sign1 = choice("+", "-", "*", "/") # Define random choice of the 1st mathematical operator
-        sign2 = choice("+", "-", "*", "/") # Define random choice of the 2nd mathematical operator
+        sign1 = choice(["+", "-", "*", "/"]) # Define random choice of the 1st mathematical operator
+        sign2 = choice(["+", "-", "*", "/"]) # Define random choice of the 2nd mathematical operator
 
         if x == 0: # Question 1
             ans = float(input(f"{fnum} {sign1} {lnum} = ")) # Define user's answer as user input. The question is based on string formatting.
